@@ -1,0 +1,145 @@
+:root{
+    --azulClaro:#30c5ff;
+    --preto:#2a2d34;
+    --verdeEscuro:#5c946e;
+    --azulPhoto:#a0dde6;
+}
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+}
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    padding: 16px 0;
+    background-color:var(--preto);
+    color: white;
+}
+header nav li{
+    display: inline;
+    text-align: center;
+    margin-right: 6px;
+    list-style: none;
+}
+header nav li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+h2{
+    font-size: 24px;
+    margin-top: 6px;
+    color: var(--preto);
+}
+hr{
+    padding: 1px;
+    background-color: var(--azulPhoto);
+    border: none;
+    width: 100%;
+    margin-bottom: 8px;
+}
+div{
+    display: flex;
+    justify-content: space-between;
+}
+p{
+    margin-top: 14px;
+}
+.sobreLoja img{
+    width: 100%;
+    height: 100%;
+    margin-right: 20px;
+}
+.sobreLoja{
+    display: block;
+    margin-top: 22px;
+}
+.produtos{
+    margin-top: 34px;
+    display: block;
+}
+.listaProdutos ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    column-gap: 1%;
+    row-gap: 3%;
+    text-align: center;
+    margin-bottom: 56px;
+}
+.listaProdutos ul li p{
+    margin-top: 4px;
+}
+.listaProdutos ul li button{
+    width: 70%;
+    padding: 18px;
+    margin-top: 12px;
+    margin-left: 8px;
+    text-transform: uppercase;
+    background-color: var(--azulClaro);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.listaProdutos ul li button:hover{
+    background-color: var(--verdeEscuro);
+    transition: 0.5s;
+}
+h4{
+    font-size: 20px;
+}
+footer{
+    margin-top: 36px;
+    padding: 16px 0;
+    background-color: var(--preto);
+    font-size: 14px;
+    color: white;
+}
+
+@media screen and (max-width: 767px){
+    .container{
+        max-width: 90%;
+    }
+    header .container{
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header{
+        text-align: center;
+    }
+    header h1{
+        margin-bottom: 12px;
+    }
+    div{
+        display: block;
+        justify-content: space-between;
+    }
+    .listaProdutos ul{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container{
+        max-width: 90%;
+    }
+    .sobreLoja img{
+        width: 60%;
+        height: 60%;
+        margin-right: 20px;
+    }
+    .listaProdutos ul{
+        grid-template-columns: repeat(2, 48%);
+        margin-bottom: 130px;
+    }
+}
