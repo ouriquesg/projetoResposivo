@@ -70,18 +70,20 @@ p{
 .listaProdutos ul{
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(3, 32%);
+    grid-template-columns: repeat(4, 23%);
     column-gap: 1%;
     row-gap: 3%;
     text-align: center;
     margin-bottom: 56px;
+    width: 100%;
 }
 .listaProdutos ul li p{
     margin-top: 4px;
+    font-size: 12px;
 }
 .listaProdutos ul li button{
-    width: 70%;
-    padding: 18px;
+    width: 90%;
+    padding: 12px;
     margin-top: 12px;
     margin-left: 8px;
     text-transform: uppercase;
@@ -89,6 +91,9 @@ p{
     border: none;
     border-radius: 3px;
     cursor: pointer;
+}
+.listaProdutos ul li img{
+    width: 80%;
 }
 .listaProdutos ul li button:hover{
     background-color: var(--verdeEscuro);
